@@ -30,7 +30,7 @@ class Library:
             if book_id in self.patrons[patron_id]['books_borrowed']:
                 self.patrons[patron_id]['books_borrowed'].remove(book_id)
                 self.books[book_id]['copies'] += 1
-                self.transactions.append({'type': 'Return', 'patron_id': patron_id, 'book_id': book_id})
+                self.transactions.append({'type': 'Return', 'patron_id': patron_id, 'book_id': book_id}) 
                 print("Book returned successfully.")
             else:
                 print("This book is not borrowed by the specified patron.")
