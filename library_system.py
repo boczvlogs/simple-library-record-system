@@ -16,7 +16,7 @@ class Library:
         if patron_id in self.patrons and book_id in self.books:
             if self.books[book_id]['copies'] > 0:
                 self.patrons[patron_id]['books_borrowed'].append(book_id)
-                self.books[book_id]['copies'] -= 1
+                self.books[book_id]['copies'] -= 1 
                 self.transactions.append({'type': 'Borrow', 'patron_id': patron_id, 'book_id': book_id})
                 print("Book borrowed successfully.")
             else:
