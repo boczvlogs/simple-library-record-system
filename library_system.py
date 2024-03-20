@@ -53,7 +53,7 @@ class Library:
             print(transaction)
 
 
-# Example usage:
+# Example usage of book:
 library_system = Library() 
 
 library_system.add_book("Introduction to Python", "John Doe", 5) 
