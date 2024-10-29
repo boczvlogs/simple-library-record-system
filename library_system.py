@@ -52,7 +52,6 @@ class Library:
         for transaction in self.transactions:
             print(transaction)
 
-
 # Example usage of book agoo only:
 library_system = Library() 
 
