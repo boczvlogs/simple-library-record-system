@@ -27,7 +27,7 @@ class Library:
 
      def return_book(self, patron_id, book_id):
         if patron_id in self.patrons and book_id in self.books:
-            if book_id in self.patrons[patron_id]['books_borrowed']:
+            if book_id in self.patrons[patron_id]['books_borrowed']: 
                 self.patrons[patron_id]['books_borrowed'].remove(book_id)
                 self.books[book_id]['copies'] += 1
                 self.transactions.append({'type': 'Return', 'patron_id': patron_id, 'book_id': book_id}) 
